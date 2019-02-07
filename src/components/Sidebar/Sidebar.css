@@ -1,0 +1,15 @@
+.sidebar {
+  display: grid;
+  width: 150px;
+  height: 100vh;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+}
+
+.initialsLogo {
+  grid-row: 1;
+  margin-top: 10px;
+  align-self: start;
+  justify-self: center;
+  max-width: 80%;
+}

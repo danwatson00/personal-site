@@ -1,0 +1,22 @@
+.mainNav {
+  grid-row: 3;
+  align-self: end;
+  margin-bottom: 20px;
+}
+
+.mainNav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.mainNav li {
+  padding: 10px;
+  border: 1px solid #333333;
+  margin: 10px;
+}
+
+.mainNav a {
+  text-decoration: none;
+  color: #333333;
+}
