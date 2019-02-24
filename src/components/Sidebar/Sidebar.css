@@ -1,4 +1,5 @@
 .sidebar {
+  grid-column: 1;
   display: grid;
   width: 150px;
   height: 100vh;

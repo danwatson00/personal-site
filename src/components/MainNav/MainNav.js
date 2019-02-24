@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import './MainNav.css';
 
 
 class MainNav extends Component {
   render() {
-    return ( 
+    return (
       <div className="mainNav">
         <ul>
-          <li><a href="/">PORTFOLIO</a></li>
-          <li><a href="/about.html">ABOUT</a></li>
-          <li><a href="/resume.html">RESUME</a></li>
-          <li><a href="/contact.html">CONTACT</a></li>
+          <li><Link to="/portfolio">PORTFOLIO</Link></li>
+          <li><Link to="/about">ABOUT</Link></li>
+          <li><Link to="/resume">RESUME</Link></li>
+          <li><Link to="/contact">CONTACT</Link></li>
         </ul>
       </div>
     )
