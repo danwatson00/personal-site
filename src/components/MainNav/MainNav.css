@@ -20,3 +20,7 @@
   text-decoration: none;
   color: #333333;
 }
+
+li:hover {
+  background-color: #FFED5F;
+}

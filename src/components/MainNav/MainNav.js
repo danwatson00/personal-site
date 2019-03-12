@@ -8,10 +8,10 @@ class MainNav extends Component {
     return (
       <div className="mainNav">
         <ul>
-          <li><Link to="/portfolio">PORTFOLIO</Link></li>
-          <li><Link to="/about">ABOUT</Link></li>
-          <li><Link to="/resume">RESUME</Link></li>
-          <li><Link to="/contact">CONTACT</Link></li>
+          <Link to="/portfolio"><li>PORTFOLIO</li></Link>
+          <Link to="/about"><li>ABOUT</li></Link>
+          <Link to="/resume"><li>RESUME</li></Link>
+          <Link to="/contact"><li>CONTACT</li></Link>
         </ul>
       </div>
     )
