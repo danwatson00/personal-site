@@ -1,16 +1,30 @@
 .sidebar {
-  grid-column: 1;
   display: grid;
+  position:fixed;
+  grid-column: 1;
   width: 150px;
   height: 100vh;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 1fr 3fr 2fr;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, .2);
+}
+
+.logo {
+  grid-row: 1;
+  grid-column: 1;
+  margin-top: 20px;
+  align-self: start;
+  justify-self: center;
 }
 
 .initialsLogo {
-  grid-row: 1;
-  margin-top: 10px;
-  align-self: start;
-  justify-self: center;
   max-width: 80%;
+  margin-left:20px;
+}
+
+.longLogo {
+  place-self: center;
+  height: 90%;
+  padding:10px;
+  border: 2px solid black;
 }

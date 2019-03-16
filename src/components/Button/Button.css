@@ -1,0 +1,19 @@
+.portBtn {
+  background-color: #FFED5F;
+  font-size: 15px;
+}
+
+.portBtn:hover {
+  background-color: black;
+  color: white;
+  transition: .5s;
+  
+}
+
+.btn {
+  margin: 10px 10px 10px 0;
+}
+
+.btnLg {
+  padding: 15px;
+}

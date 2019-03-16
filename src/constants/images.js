@@ -1,3 +1,2 @@
 export const ME = '/images/dan_watson.jpg'
-
-export default ME
+export const GUITAR = './images/guitar_dark.jpg'
