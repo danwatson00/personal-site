@@ -1,18 +1,22 @@
 import React, { Component } from 'react'
 import Button from '../Button/Button'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './PortfolioCard.css'
+
+
 
 class PortfolioCard extends Component {
   render() {
     return (
-      <div className="portfolioCard">
-        <div className="cardHeader">
-          <h2>{this.props.cardTitle}</h2>
-          <p>{this.props.cardIntro}</p>
-          <Link to={this.props.cardLink}>
+      <div className={`${this.props.bkd} portfolioCard`}>
+        <h2>{this.props.cardTitle}</h2>
+        <div className="cardDetail">
+          <div className="cardIntro">
+            <p>{this.props.cardIntro}</p>
+          </div>
+          <NavLink className="linkBtn" to={this.props.cardLink}>
             <Button btnText="SEE WHAT I DID" btnClass="btn btnLg portBtn" />
-          </Link>
+          </NavLink>
         </div>
       </div>
 
