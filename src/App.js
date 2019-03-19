@@ -6,6 +6,7 @@ import Resume from './components/Resume/Resume'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
 import Portfolio from './components/Portfolio/Portfolio'
+import Axefax from './components/Axefax/Axefax'
 import * as routes from './constants/routes'
 import './App.css'
 
@@ -40,6 +41,11 @@ class App extends Component {
               <Route 
                 path={routes.PORTFOLIO}
                 component={() => <Portfolio />} 
+              />
+
+              <Route 
+                path={routes.AXEFAX}
+                component={() => <Axefax />} 
               />
             </Switch>
           
