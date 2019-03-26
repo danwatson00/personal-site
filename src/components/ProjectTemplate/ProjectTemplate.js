@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './ProjectTemplate.css'
-/* import Guitarist from '/src/images/guitarist.jpg' */
+import TechIcons from '../TechIcons/TechIcons'
 
 class ProjectTemplate extends Component {
   render() {
@@ -40,20 +40,37 @@ class ProjectTemplate extends Component {
         </div>
         <div className="tech projDiv">
           <h2>THE TECH</h2>
-          <p> I very excited about this project because I got to do all of the work 
-          from design to development. Starting with wireframes, I created functioning 
-          mockups with Adobe XD. The company’s existing sites were made with Vue.js 
-          so I decided to try making the app in Vue.js. I also used Javscript, HTML, 
-          and CSS.</p>
+          <p>{this.props.tech}</p>
+          <TechIcons icons={this.props.techIcons}/>
         </div>
         <div className="process projDiv">
           <h2>THE PROCESS</h2>
         </div>
         <div className="product projDiv">
           <h2>THE PRODUCT</h2>
+          <div>
+            <a href="">
+              <img src={require(`../../images/github.png`)} alt="github icon" />
+              <p>Github</p>
+            </a>
+          </div>
+          <div>
+            <a>
+              <img src={require(`../../images/internet.png`)} alt="world wide web icon" />
+              <p>Live Site</p>
+            </a>
+          </div>
+          <div>
+            <a>
+              <img src={require(`../../images/internet.png`)} alt="world wide web icon" />
+              <p>Design Case Study</p>
+            </a>
+          </div>
+
         </div>
         <div className="learned projDiv">
           <h2>WHAT I LEARNED</h2>
+          <p>{this.props.learned}</p>
         </div>
         
       </div>
